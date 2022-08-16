@@ -1,0 +1,43 @@
+Mobile: less 576
+min 576(576 to 992=tablet)=>Tablet/landscape mobile+tablet
+min 1200=>PC
+
+Đặt chấm hỏi cho dùng width theo hằng số của PC/tablet/mobile
+Mobile:col-12 only(full màn hình)
+Tablet:2 col-6
+PC: 2 loại màn hình từ quanh 1200px(lap) hoặc quanh 1980px(>1440px)
+    Ta dùng col-4 *3 cho PC 1200
+    Ta dùng col-3 *3 cho PC max?Hoặc là col-4 luôn
+
+Lệnh chính xác: PC (col-xl-4) Tablet+landscape phone( col-md-6) đt .col- 
+chuỗi lệnh css ở dưới, với 1 và 2 cho đt to và nhỏ(đt to=>90%,đt nhỏ 100%)
+Lệnh 3 4 tablet và đt landscape+tablet landscape(100% nhét 2 box)
+Lệnh 5 6 dành cho PC để đảm bảo được y hình ban đầu
+
+cân nhắc viết lại lệnh này! Nếu max width<576 thì clamp tới min 450px (đt)
+Nếu max<1200, clamp min 564 max 900 cho<1200(tablet)
+>1200, width: 1200
+
+
+Các grid sẽ ở y nguyên như cũ với PC, các class được thêm vào, skill div bên trong giữ nguyên!
+    .skill, #about>.container ,  #certificate>.container
+    :thêm col-xl-4 col-lg-4 col-md-6 .col
+   và sẽ ổn!
+
+
+grid cần thay đổi trên tablet và ĐT
+#certificate>.container(grid mới ko đổi trên tablet và pc, với đt chuyển thành cột trên dưới)
+#project>.container (đề bài yêu cầu để im(nhảm cứt vcl)) nên hỏi mentor NẾU TA ĐỔI THÀNH GIAO DIỆN 2 cột tablet/1 cột ĐT thì sao! Hỏi trước thật kỹ!
+Cần chỉnh lại ảnh cho vừa với màn hình, chắc dùng background-size:cover là ổn!
+
+NOPE Footer tự design theo cột , NOPE KO PHẢI FOOTER
+Cái digital CS gì gì đó, khả năng cao được thiết kế như sau
+Màn hình PC: 6 3 3, grid PC
+Mobile: 12 Grid Mobile,
+Tablet: 12 Grid tablet, tự làm 3 cái grid trên đó, chỉ cần set div của từng nhóm 2 gồm (tiêu đề icon+text h3+p), rồi set thành grid row/column cho từng media
+
+Các câu hỏi cần hỏi mentor
+1: Đề bài mục #project>.container ghi là giữ nguyên 3 cột, nhưng chúng rất xấu trên ĐT!
+ Nếu có thể dễ dàng xếp lại thành 2 cột tablet,1 cột mobile cho đẹp thì sao? Có bị trừ điểm ko?
+2: Mục Charter project extra credit có được phép dùng các chức năng của bootstrap ko?
+3: Mục này chỉ nói về design tablet và Mobile, vậy design PC là như hình đầu tiên?
