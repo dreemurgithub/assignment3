@@ -13,7 +13,6 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto auto;
   border: solid 1px;
-  text-align: justify;
   padding: 0;
 }
 #job-info > div > .skill > h1 {
@@ -36,6 +35,7 @@
 #banner > div {
   margin-top: auto;
   margin-bottom: auto;
+  
 }
 h3 {
   text-align: left;
@@ -47,6 +47,15 @@ a:active {
   text-decoration: none !important;
 }
 /*lệnh lặt vặt cho đẹp*/
+#color-gray{
+  background-color:  #a1a19f;
+}
+#color-grey{
+  background-color: #f7f7f7;
+}
+p,li{
+  text-align: justify;
+}
 .mt-40>li{
   list-style: none;
 }
@@ -80,6 +89,7 @@ i {
 }
 .flex-list > ul > li {
   margin: 0 1em 0 0;
+  padding: 0;
 }
 #about > div > ul > li {
   list-style: none;
@@ -89,12 +99,16 @@ i {
   height: 0.5em;
   background-color: rgb(36, 132, 221);
   border: solid;
+  position: relative;
+  bottom: -0.5em;
 }
 .white {
   background-color: antiquewhite;
   border: solid;
   width: 2em;
   height: 0.5em;
+  position: relative;
+  bottom: -0.5em;
 }
 
 #footer > div > ul {

@@ -49,7 +49,6 @@
   
   #banner {
     background-image: url("../images/banner.jpg");
-    background-color: aliceblue;
     background-size: cover;
     display: flex;
     height: 30vh;
@@ -96,13 +95,7 @@
       text-align: justify;
     }
     .bg-grey {
-      background: linear-gradient(
-        to right,
-        #a1a19f,
-        #a1a19f 50%,
-        #f7f7f7 50%,
-        #f7f7f7 100%
-      );
+      background: #f7f7f7 ;
     }
     #certificate > .row > div {
       display: grid;
@@ -112,4 +105,5 @@
       width: 99%;
       margin: 0 auto 0 auto;
     }
+    
   }
