@@ -22,7 +22,6 @@
     }
     #banner {
       background-image: url("../images/banner.jpg");
-      background-color: aliceblue;
       background-size: cover;
       display: flex;
       height: 30em;
